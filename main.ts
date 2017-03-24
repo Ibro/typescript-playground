@@ -1,3 +1,5 @@
+import TupleTypeInit from './TupleType';
+
 class Playground {
     public name: string;
 
@@ -20,3 +22,4 @@ play.appendTextToName(' Playground');
 play.greet();
 
 
+TupleTypeInit();
