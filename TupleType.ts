@@ -1,4 +1,4 @@
-export default function TupleTypeInit () {
+export default function TupleTypeInit() {
     let tupleType: [string, number];
 
     tupleType = ['hey', 13];
@@ -10,4 +10,18 @@ export default function TupleTypeInit () {
     // tupleType[5] = true; // Error - Type 'true' is not assignable to type 'string | number'
 
     console.log(tupleType);
+
+    type Tuple = [boolean, number];
+
+    let x: Tuple;
+
+    x = [false, 0, 3, 3, true];
+
+    interface ITuple {
+        0: boolean,
+        1: number
+    };
+
+    let y: ITuple;
+    y = [false, 0, 3, 3, true];
 }
