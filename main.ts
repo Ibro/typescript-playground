@@ -22,4 +22,4 @@ play.appendTextToName(' Playground');
 play.greet();
 
 
-TupleTypeInit();
+// TupleTypeInit();
