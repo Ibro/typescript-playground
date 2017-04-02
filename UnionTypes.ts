@@ -38,3 +38,25 @@ let p: IUnionType = {
 p = {
     companyId: 'cid993'
 };
+
+type CustomString = string;
+
+type CustomType = string | number;
+
+interface IStudent {
+    id: string;
+    age: number;
+}
+
+interface IWorker {
+    companyId: string;
+}
+
+type IStudentAlias = IStudent;
+type ICustomType = IStudent | IWorker;
+
+
+let s: IStudentAlias = {
+    id: 'ID3241',
+    age: 2
+};
